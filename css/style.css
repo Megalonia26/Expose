@@ -1,0 +1,31 @@
+.items {
+    max-width: 700px;
+    margin: auto;
+    gap: 10px;
+}
+
+.item {
+    align-items: center;
+}
+
+.item .fa {
+    box-shadow: 0 0 2px gray;
+}
+
+.item p {
+    margin-bottom: 5px;
+}
+
+.item:hover {
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+}
+
+
+.about-us {
+    max-width: 800px;
+}
+
+div.img-container > img {
+    width: 400px;
+}
