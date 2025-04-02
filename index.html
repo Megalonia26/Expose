@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.css" />
-    <link rel="stylesheet" href="css/tailwind.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Services Offshore</title>
-  </head>
-  <body>
-    rdmmael@gmail.com
-    <header>
 
-    </header>
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.css" />
+  <link rel="stylesheet" href="css/tailwind.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    </main>
+  <title>Services Offshore</title>
+</head>
 
-    <footer>
+<body>
+  <header class="">
+    <nav class="bg-[#fff] text-[#8B0000]">
+      <div class="h-[6vh] flex justify-between items-center px-[5vw] shadow-xl">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <a class="inline hover:text-gray-500" href="">+261 32 96 640 09</a>
+        </div class="flex items-center gap-6">
+        <div>
+          <a class="hover:text-gray-500">Rejoignez-nous <i class="fa-solid fa-angles-right"></i></a>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+      </div>
+      <div class="w-[92%] flex justify-between items-center mx-auto shadow-black">
+        <img class="" src="img/offshore.PNG" alt="logo">
+        <div
+          class="nav-links duration-500 md:static bg-white :min-h-fit absolute  min-h-[60vh] md:min-h-[0] left-[50%] top-[-100%] md:w-auto w-full flex items-center">
+          <ul class="flex md:flex-row flex-col items-center md:gap-[2vw] gap-8">
+            <li><a class="hover:text-gray-500" href="#">NOS SERVICES</a></li>
+            <li><a class="hover:text-gray-500" href="#">ACTUALITES</a></li>
+            <li><a class="hover:text-gray-500" href="#">REFERENCEMENT</a></li>
+            <select class="hover:text-gray-500" name="redaction" id="redac">
+              <option class="hover:text-gray-500" value="redaction">REDACTION</option>
+              <option class="hover:text-gray-500" value=""></option>
+              <option class="hover:text-gray-500" value=""></option>
+              <option class="hover:text-gray-500" value=""></option>
+              <option class="hover:text-gray-500" value=""></option>
+            </select>
+            <select class="hover:text-gray-500" name="outsourcing" id="outso">
+              <option class="hover:text-gray-500" value="out">OUTSOURCING</option>
+              <option class="hover:text-gray-500" value=""></option>
+              <option class="hover:text-gray-500" value=""></option>
+              <option class="hover:text-gray-500" value=""></option>
+              <option class="hover:text-gray-500" value=""></option>
+            </select>
+            <li><a class="hover:text-gray-500" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="heading">
+      <div class="absolute top-[60%] mx-[10vw] text-white gap-10">
+        <p class="text-xl"><i class="fa-solid fa-minus text-red-900 text-2xl"></i> Conseils gratuits et Impartiaux!</p>
+        <h1 class="text-6xl">Decouvrez notre <br> metiers</h1>
+        <p class="my-[2vh]">Notre service offshore vous garantie des solutions sur-mesure d'externalisation du<br>processus metier pour vous epanouir</p>
+        <h2 class="text-2xl font-bold mb-[10vh]">REFERENCE</h2>
+        <div class="flex inline">
+          <button class="rounded-full border-2 border-white-500 md:text-xl md:p-5 p-2 mx-7 cursor-pointer hover:bg-white/30 backdrop-blur-sm">VOIR+</button>
+          <button class="rounded-full border-2 border-white-500 md:text-xl md:p-5 p-2 mx-7 cursor-pointer hover:bg-white/30 backdrop-blur-sm">CONTACTEZ-NOUS</button>
+      </div>  
+    </div>
+  </header>
+  <main>
 
-    </footer>
-    <script src="js/tailwind.min.3.4.1.js"></script>
-  </body>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="js/tailwind.min.3.4.1.js"></script>
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[6%]')
+    }
+  </script>
+</body>
+
 </html>
